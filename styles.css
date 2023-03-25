@@ -1,0 +1,11 @@
+html {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.name {
+    float: left;
+}
+
+.links {
+    float: right;
+}
