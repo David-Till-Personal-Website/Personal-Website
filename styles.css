@@ -1,0 +1,38 @@
+html {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10px;
+}
+
+header{
+    background: rgb(139, 139, 139);
+    font-size: 2rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: .5em 1em;
+    box-shadow: 0 10px 20px -2px rgb(92, 2, 167);
+}
+
+.name {
+    float: left;
+}
+
+.links {
+    float: right;
+    box-sizing: border-box;
+    
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: rgb(123, 3, 192);   
+}
+
+
+body{
+    color: black;
+    margin: 0%;
+}
