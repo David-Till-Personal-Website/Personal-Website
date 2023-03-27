@@ -1,16 +1,18 @@
+
 html {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 10px;
+    box-sizing: border-box;
 }
 
 header{
     background: rgb(139, 139, 139);
-    font-size: 2rem;
-    position: fixed;
+    font-size: 3rem;
+    position:relative;
     left: 0;
     right: 0;
-    padding: .5em 1em;
-    box-shadow: 0 10px 20px -2px rgb(92, 2, 167);
+    padding: 2em 2em;
+    box-shadow: 0 10px 10px -2px rgb(92, 2, 167);
 }
 
 .name {
@@ -33,6 +35,27 @@ a:hover {
 
 
 body{
-    color: black;
-    margin: 0%;
+    min-height: 100vh;
+    padding: 40px 20px 80px;
+    box-shadow: 0 0 12px 2px black;
+    background: rgba(138, 138, 138, 0.459);
+    max-width: 960px;
+    margin: auto;
 }
+
+h1, h2{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.personalPhoto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
