@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <video id="forest" autoplay loop muted poster="forest.mp4">
+        <source src="forest.mp4" type="video/mp4">
+    </video>
+
+    <title>Home</title>
+
+    <div class="sideNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">My Work</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <h1>Contact me with any inquiries</h1>
+</head>
+
+<body>
+    <div class="container">
+        <form method="Submit" action="formSubmission.html">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="First Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">E-Mail</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="lastname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="message">Message</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="message" name="message" placeholder="" style="height:200px"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+
+</html>
