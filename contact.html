@@ -24,7 +24,7 @@
 
 <body>
     <div class="form">
-        <form method="Submit" action="formSubmission.html">
+        <form method="submit" action="formSubmission.html">
             <div class="row">
                 <div class="col-25">
                     <label for="fname">First Name</label>
@@ -67,8 +67,8 @@
 </body>
 
 <script>
-    const form = document.querySelector(".form")
-   const submitButton = document.querySelector(".submit")
+   const form = document.querySelector("#form")
+   const submitButton = document.querySelector("#submit")
    const scriptURL = 'https://script.google.com/macros/s/1XTaVdkdAnzhAHoLOA-x0K4svtJOB9RUnp2OgudFCNoEE4Lo8muDKOgSO/exec'
 
    form.addEventListener('submit', e => {
