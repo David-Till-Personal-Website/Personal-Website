@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <video id="forest" autoplay loop muted poster="forest.mp4">
         <source src="forest.mp4" type="video/mp4">
@@ -62,30 +64,31 @@
                 <input type="submit" value="Submit">
             </div>
         </form>
-        
+
     </div>
 </body>
 
 <script>
-   const form = document.querySelector("#form")
-   const submitButton = document.querySelector("#submit")
-   const scriptURL = 'https://script.google.com/macros/s/1XTaVdkdAnzhAHoLOA-x0K4svtJOB9RUnp2OgudFCNoEE4Lo8muDKOgSO/exec'
+    const form = document.querySelector("#form")
+    const submitButton = document.querySelector("#submit")
+    const scriptURL = 'https://script.google.com/macros/s/1XTaVdkdAnzhAHoLOA-x0K4svtJOB9RUnp2OgudFCNoEE4Lo8muDKOgSO/exec'
 
-   form.addEventListener('submit', e => {
-     submitButton.disabled = true
-     e.preventDefault()
-     let requestBody = new FormData(form)
-     fetch(scriptURL, { method: 'POST', body: requestBody})
-       .then(response => {
-          alert('Success!', response)
-          submitButton.disabled = false
-         })
-       .catch(error => {
-       alert('Error!', error.message)
-         submitButton.disabled = false
+    form.addEventListener('submit', e => {
+        submitButton.disabled = true
+        e.preventDefault()
+        let requestBody = new FormData(form)
+        fetch(scriptURL, { method: 'POST', body: requestBody })
+            .then(response => {
+                alert('Success!', response)
+                submitButton.disabled = false
+            })
+            .catch(error => {
+                alert('Error!', error.message)
+                submitButton.disabled = false
 
-       }
-       )
-   })
+            }
+            )
+    })
 </script>
+
 </html>
