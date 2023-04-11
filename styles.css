@@ -26,6 +26,7 @@ html {
     top: 0;
     bottom: 0;
     z-index: -1;
+    opacity: .5;
 }
 
 .sideNav {
@@ -105,7 +106,6 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    opacity: 0.8;
     box-shadow: 0 10px 20px 5px rgb(8, 8, 10);
 }
 
@@ -135,7 +135,6 @@ h5 {
     float: right;
     margin: 0 24px 24px 10px;
     height: 200px;
-    opacity: 0.8;
     box-shadow: 0 10px 20px 5px rgb(8, 8, 10);
 }
 
@@ -143,7 +142,6 @@ h5 {
     float: left;
     margin: 0 24px 24px 10px;
     height: 200px;
-    opacity: 0.8;
     box-shadow: 0 10px 20px 5px rgb(8, 8, 10);
 }
 
@@ -151,7 +149,6 @@ h5 {
     float: right;
     margin: 0 24px 24px 10px;
     height: 200px;
-    opacity: 0.8;
     box-shadow: 0 10px 20px 5px rgb(8, 8, 10);
 }
 
@@ -204,11 +201,22 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 600px) {
-
-    .col-25,
-    .col-75,
-    input[type=submit] {
-        width: 100%;
-        margin-top: 0;
+    .motorCycle {
+        float: left;
+        width: 150px;
+        aspect-ratio: auto;
     }
+
+    .camera {
+        float: left;
+        width: 150px;
+        aspect-ratio: auto;
+    }
+
+    .mountain {
+        float: left;
+        width: 150px;
+        aspect-ratio: auto;
+    }
+
 }
